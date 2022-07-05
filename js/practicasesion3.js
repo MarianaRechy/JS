@@ -1,10 +1,10 @@
 
-let a=7
-let b=6
-let c=5
+//let a=7
+//let b=6
+//let c=5
 //let result= a>b ? console.log("a es mayor que b") : console.log ("b es mayor que a")
 
-let result= a>b && a>c ? console.log("a es mayor") : b>a && b>c ? console.log("b es mayor") : console.log("c es mayor")
+//let result= a>b && a>c ? console.log("a es mayor") : b>a && b>c ? console.log("b es mayor") : console.log("c es mayor")//
 
 
 /*
@@ -30,3 +30,25 @@ const c=2
 
 let result= console.log( `${base*altura / c}`) 
 */
+
+let a= parseFloat(prompt("Ingresa un número"))
+let b= parseFloat(prompt("Ingresa un segundo número"))
+const operacion= parseFloat(prompt("Elige una opreación y registra el número de la lista 1:suma, 2:resta, 3:division, 4:multiplicación"))
+
+switch (operacion){
+    case 1: console.log(`Resultado:${a+b}`)
+    break
+    case 2: console.log(`Resultado:${a-b}`)
+    break
+    case 3: console.log(`Resultado:${a/b}`)
+    break
+    case 4: console.log(`Resultado:${a*b}`)
+    break
+}
+
+
+
+
+
+
+

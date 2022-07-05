@@ -1,4 +1,4 @@
-console.log("hola koders");
+//console.log("hola koders");
 // Esto es un comentario
 
 /* Esto es
@@ -189,8 +189,8 @@ multilinea
     //let x = (10 + 10) * 3; primero la suma
 
 
-let data= prompt("Ingreso de temperatura");
-console.log (`Grados Ceclius: ${data * 9/5 + 32}`)
+//let data= prompt("Ingreso de temperatura");
+//console.log (`Grados Ceclius: ${data * 9/5 + 32}`)
 
 
 

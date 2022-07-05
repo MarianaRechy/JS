@@ -48,6 +48,7 @@
         //console.log("El numero es negativo")
     //}
 
+    /*
     let num1= prompt ("Ingresa un número")
     
     let num2= prompt ("Ingresa otro número")
@@ -63,7 +64,7 @@
     else if(num3>num1 && num3>num2){
         console.log ("número3 es mayor")
     }
-    
+    */
     
 //Ternary operator
 
