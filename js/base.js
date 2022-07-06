@@ -194,21 +194,17 @@ multilinea
 
 
 
+//Metodos de string//
 
+/*
+let usuario=(prompt("Escribe tu nombre completo"))
+let uno= usuario.length
+let dos= usuario.match (/[aeiou]/gi).length
 
+window.alert(`Número de caracteres ${uno}`)
+window.alert(`${dos} vocales están presentes`)
 
+//Imprimri cada uno de los las palabras que hay ('hola koder') => ['hola', 'koders'}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const result=amarillo.repeat(3);
+window.alert(`${result}`) */

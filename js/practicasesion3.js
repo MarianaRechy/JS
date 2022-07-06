@@ -29,7 +29,6 @@ let altura= parseInt(prompt("Ingresar la altura del triangulo"))
 const c=2
 
 let result= console.log( `${base*altura / c}`) 
-*/
 
 let a= parseFloat(prompt("Ingresa un número"))
 let b= parseFloat(prompt("Ingresa un segundo número"))
@@ -45,6 +44,7 @@ switch (operacion){
     case 4: console.log(`Resultado:${a*b}`)
     break
 }
+*/
 
 
 
