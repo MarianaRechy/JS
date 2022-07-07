@@ -74,18 +74,25 @@ console.log(rReverse)
 */
 
 
+//TAREA
+
 /*Ejercicio 1
 Escribir un programa de arroje la suma de los múltiplos de 3, 5 o 7 que hay entre 1 y 100
 Resolver con For, While y do While*/
 
+let num = parseInt(prompt("Escribe 3, 5 ó 7 para saber sus multiplos"))
+let sum = 0
 
-for(i=1; (i>1 && i<100); i++){
-    
+if(num == 3 || num == 5 || num == 7){
+    for(i=1 ; num*i<=100 ; i++) {
+        console.log(`${num} X ${i} = ${num*i}`);
+        sum = sum + num*i
+    }
+    console.log(`la suma de los multiplos de ${num} es ${sum}`)
 }
-
-
-
-
+else{
+    window.alert("Número Inválido")
+}
 
 /*Ejercicio 2
 Pedir el usuario 1 número entre 1 y 100
@@ -152,4 +159,52 @@ Por ejemplo 'hola kodErs'
  ->  A -> 1
  ->  E -> 1
  ->  Espacios -> 1 */
+
+ /*
+ let user= (prompt("Escribe una oracion"))
+ let a= user.match(/[a]/gi).length
+ let spa= user.match(/[" "]/gi).length
+ let e= user.match(/[e]/gi).length
+ let i=0
+*/
+
+/*
+//DO WHILE
+do{
+    console.log(`Número de "a": ${a}`)
+    console.log(`Número de "e": ${e}`)
+    console.log(`Número de "Espacios": ${spa}`)
+    i++;
+}
+while(i<1)
+//DO WHILE END
+
+*/
+
+ /*
+//WHILE
+while(i<1){
+    console.log(`Número de "a": ${a}`)
+    console.log(`Número de "e": ${e}`)
+    console.log(`Número de "Espacios": ${spa}`)
+    i++;
+}
+*/
+// WHILE END
+
+ /*
+ //FOR
+ for(i=0; (i<1); i++){
+    console.log(`Número de "a": ${a}`)
+    console.log(`Número de "e": ${e}`)
+    console.log(`Número de "Espacios": ${spa}`)
+ }
+
+// FOR END
+ */
+
+
+ 
+
+
 
