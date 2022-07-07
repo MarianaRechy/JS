@@ -80,6 +80,7 @@ console.log(rReverse)
 Escribir un programa de arroje la suma de los múltiplos de 3, 5 o 7 que hay entre 1 y 100
 Resolver con For, While y do While*/
 
+/*
 let num = parseInt(prompt("Escribe 3, 5 ó 7 para saber sus multiplos"))
 let sum = 0
 
@@ -93,6 +94,7 @@ if(num == 3 || num == 5 || num == 7){
 else{
     window.alert("Número Inválido")
 }
+*/
 
 /*Ejercicio 2
 Pedir el usuario 1 número entre 1 y 100
