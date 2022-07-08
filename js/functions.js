@@ -24,11 +24,6 @@ Para utilizar funciones:
 
  funcionSuma();
 
- 
-
- //EJERCICIO
-
-
  3.Retorno
  3.1 Utilizamos la palabra reservada "return"
  3.2 Parametros= son variables que toma la funcion al momento de su definicion. -> son neutros o agnosticos
@@ -57,24 +52,7 @@ imprimeMensaje("hola","mundo") <--- esto es invocar
 "inicializar (p1, p2)=20 con signo de igual"
 
 Valores por defecto
-prompt()
 
-
-//EJERCICIO
-
-let usuario= (prompt("Escribe tu nombre completo"))
-let vocal= usuario.match (/[aeiou]/gi)
-let b=""
-
-function vocales(a){
-    for(i=0; i < a.length; i++){
-        console.log (b=(a[i]))
-    }
-return b;
-}
-
-vocales(vocal)
-console.log(b)
 
 mutabilidad de argumentos
 let b=10
@@ -103,21 +81,13 @@ function testNoPrimitive (arr{
 
 si son alterados por lo que hay adentro
 
-
-
 testNoPrimitive(primerArray);
 console.log(primerArray);
-
-
 
 Hoisting
 comportamiento, todas las funciones van arriba
 console.log (test);
 var test=1;
-
-
-
-
 
 
 Declarar la funcion antes de utilizarla
@@ -151,3 +121,77 @@ las funciones tienen que ser invocadas dentro del lugar donde se difinieron
 lexical scope {De afuera hacia adentro si se puede, de adentro hacia afuera no}
 
 
+
+//EJERCICIOS FUNCIONES
+
+//EJERCICIO 1
+
+let usuarioNumero= parseInt(prompt("Escribe 3, 5 ó 7 para saber sus multiplos"))
+
+function ejercicioMultiplos(num){
+let sum = 0
+
+if(num == 3 || num == 5 || num == 7){
+    for(i=1 ; num*i<=100 ; i++) {
+        console.log(`${num} X ${i} = ${num*i}`);
+        sum = sum + num*i
+    }   
+}
+else{
+    window.alert("Número Inválido")
+}
+return sum;
+}
+
+let resultado=ejercicioMultiplos(usuarioNumero)
+console.log(`la suma de los multiplos de ${usuarioNumero} es ${resultado}`)
+
+
+
+//EJERCICIO 2
+
+let usuarioEntrada= parseInt(prompt("Escribe un número entre el 1 y 100"))
+
+function ejercicioSuma(num){
+let sum = 1
+let i = 2
+if(num>100){
+    window.alert("Número invalido")
+}
+else if(num<=100){
+for (i=2; i<=num; i++){
+   sum = sum + i;
+}
+window.alert(sum)
+}
+return sum;
+}
+
+
+let resultado= ejercicioSuma(usuarioEntrada)
+console.log(resultado)
+
+
+//EJERCICIO 3
+
+let userEntry= parseInt(prompt("Escribe un número entre el 1 y 100"))
+
+function ejercicioVocales(sum){
+    let user= (prompt("Escribe una oracion"))
+    let a= user.match(/[a]/gi).length
+    let spa= user.match(/[" "]/gi).length
+    let e= user.match(/[e]/gi).length
+    let i=0
+
+for(i=0; (i<1); i++){
+    console.log(`Número de "a": ${a}`)
+    console.log(`Número de "e": ${e}`)
+    console.log(`Número de "Espacios": ${spa}`)
+ }
+return console.log
+}
+
+let resultado=ejercicioVocales(userEntry)
+console.log(resultado)
+
+*/
