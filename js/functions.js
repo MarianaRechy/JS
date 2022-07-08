@@ -91,16 +91,63 @@ Passing by reference
 Passing by value
 {}  objetos
 [] arrays
+los dos anteriores son pasados by reference
+
+Passing by reference
+                    0      1
+let primerArray= ["texto, 123"]
+
+function testNoPrimitive (arr{
+    arr[0] ="otro texto"
+})
+
+si son alterados por lo que hay adentro
+
+
+
+testNoPrimitive(primerArray);
+console.log(primerArray);
+
 
 
 Hoisting
-comportamiento
+comportamiento, todas las funciones van arriba
 console.log (test);
 var test=1;
+
+
+
+
+
 
 Declarar la funcion antes de utilizarla
 
 function t(){
 }
 console.log(t())
-*/
+
+¿Que es una función?
+Funcion encapsulada en la parabla reservada function
+
+function funcionDemo(a,b){
+    console.log(a,b)
+    //codigo a ejecutar cuando se llame la funcion
+}
+
+funcionDemo(2,3);
+
+scope
+las funciones tienen que ser invocadas dentro del lugar donde se difinieron
+
+{
+    function A
+}
+
+{
+    funcion B
+    function A--->Error
+}
+
+lexical scope {De afuera hacia adentro si se puede, de adentro hacia afuera no}
+
+
