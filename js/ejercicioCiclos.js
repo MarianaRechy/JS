@@ -45,6 +45,15 @@ for(i=0; i < tres.length; i++){
 //ejercicio 2 - grupal
 
 //Este ejercicio no funciona aún, no entiendo muy bien la logica cuando estamos usando strings en vez de números.
+//Ejercicio 2
+//Pedir al usaurio una oracion
+//Imprimir un string con todas las vocales
+//Imprimir un string con todas las consonantes
+//Resultado de ejemplo
+//p.ej. "Hola mundo"
+//Consonantes -> hlmnd
+//Vocales -> oauo
+
 
 /*
 let usuario= (prompt("Escribe una oración"))
