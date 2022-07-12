@@ -29,7 +29,30 @@ CON UNA SOLA SENTENCIA PODEMOS QUITAR LA LLAVE
 const arrowFunction = p1 => console.log(nums)
 const arrowFunction = p1 => P1 + 1; --> NO NECESITA RETUNR
 
+//EJERCICIOS
 
 
+Practica Grupal 2
+Arrow function
+Pedir al usuario una cadena de texto
+Declarar una función flecha para
+Pasarle la oración del usuario como parámetro de la función declarada
+verificar si esa oración es un palíndromo
+Retornar el resultado y mostrarlo al usuario (usando log o aler)
+Por ejemplo:
+// isPalindrome('hola') -> No es un palíndromo
+// isPalindrome('oso') -> SI es un palindromo
+ 
+   Podemos probar con las siguientes ->
+   anita lava la tina -> Palindromo
+   oso -> Palindromo
+   seres -> Palindromo
+ 
+   Hint / Pista
+    Quitamos los espacios
 
+
+Let userString=
+
+*/
 
