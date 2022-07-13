@@ -38,17 +38,102 @@ console.log(result)
 * Pista / Hint, debemos iterar el array 
 
 */
-
+/*
 const change = (array) => {
 
     if(typeof array === "undefined"){    
-        return "se necesita un array"; 
+        return "Se necesita un array de strings"; 
     }
+
     let change= [];
     for(let i=0; 1 < array.length; i++){
 
-        let string
-
+        let string = array [i];
+        let adjust= string[0] + string.substr(string.length -1);
+        change.push(adjust);
     }
+    return change;
+};
 
+console.log(change([paloma, blanca]));
+console.log(change([paloma, negra]))
+console.log(change());
+*/
+/*
+
+
+// ! Estos son los ejercicios de tarea 11.07
+Ejercicio 1 
+* Función que reciba una palabra
+* Retorna la palabra invertida
+* La reversa del string lo haremos usando métodos de array
+*  hint :  a un string no podemos aplicarle métodos array pero hay métodos de string que nos devuelve un array
+*
+* reverseStr('hola mundo')
+* -> 'odnum aloh'
+*/
+
+
+
+
+/*
+Ejercicio 2 
+* Dado el siguiente arreglo de ciudades
+*   ['méXicO', 'PErÚ', 'eSpAña', 'inGlaterrA']
+* Generar una función que capitalize cada elemento del array
+* => Se puede resolver con .forEach() o .map()
+
+
+
+const arrayCap= (array) => {
+
+    let result=[]
+
+        array.forEach((adjust) => {
+            let arrayCapitalized = `${adjust[0].toUpperCase()}${adjust.slice(1).toLowerCase()}`
+            result.push(arrayCapitalized)
+        })
+
+    return result;
 }
+
+let result=arrayCap(['méXicO', 'PErÚ', 'eSpAña', 'inGlaterrA']);
+console.log(result)
+
+/*
+
+
+
+
+
+
+
+
+
+Ejercicio 3
+* Dado un arreglo con nombres de personas,
+* Función que devuelva un arreglo con los nombres de las personas que empiezan con vocales y además capitalizados
+*
+* onlyNamesVowels( ['jorge','ana','ivan','sergio','oscar' ] )
+* -> ['Ana','Ivan','Oscar']
+*
+* => Se puede resolver con .forEach() o .filter()
+
+
+
+const change= (array) => {
+
+    let result=[]
+
+    if(array.match(/[aeiou]/gi)){
+        array.forEach= (adjust)=>{
+            let arrayCapitalized = `${adjust^[0].toUpperCase()}`
+            result.push(arrayCapitalized)
+        }
+    }
+    return result;
+}
+
+change(['jorge','ana','ivan','sergio','oscar']);
+
+*/
