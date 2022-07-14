@@ -10,8 +10,6 @@ Ejercicio 1
 * Pista / Hint, debemos iterar el array 
 
 
-
-
 const arrayNumbers= [6, 8, 10, 7, 12, 7, 4, 10];
 
 const functionNumbers = (array)=>{
@@ -71,10 +69,16 @@ Ejercicio 1
 *
 * reverseStr('hola mundo')
 * -> 'odnum aloh'
-*/
 
 
+let fun="Hola mundo"
 
+const change=(input) =>{
+    return console.log(input.split("").reverse("").join(""));
+}
+
+let result= change(fun)
+console.log(result)
 
 /*
 Ejercicio 2 
@@ -82,8 +86,6 @@ Ejercicio 2
 *   ['méXicO', 'PErÚ', 'eSpAña', 'inGlaterrA']
 * Generar una función que capitalize cada elemento del array
 * => Se puede resolver con .forEach() o .map()
-
-
 
 const arrayCap= (array) => {
 
@@ -102,14 +104,6 @@ console.log(result)
 
 /*
 
-
-
-
-
-
-
-
-
 Ejercicio 3
 * Dado un arreglo con nombres de personas,
 * Función que devuelva un arreglo con los nombres de las personas que empiezan con vocales y además capitalizados
@@ -118,22 +112,24 @@ Ejercicio 3
 * -> ['Ana','Ivan','Oscar']
 *
 * => Se puede resolver con .forEach() o .filter()
+*/
 
+let array= ['jorge','ana','ivan','sergio','oscar']
 
-
-const change= (array) => {
+const change = (input) => {
 
     let result=[]
 
-    if(array.match(/[aeiou]/gi)){
-        array.forEach= (adjust)=>{
-            let arrayCapitalized = `${adjust^[0].toUpperCase()}`
+    if(input.match[0](/[aeiou]/gi)){
+        input.forEach = (adjust) => {
+            let arrayCapitalized = (`${adjust^[0].toUpperCase()} + ${adjust.slice(1).toLowerCase}`)
             result.push(arrayCapitalized)
         }
     }
     return result;
 }
 
-change(['jorge','ana','ivan','sergio','oscar']);
+let result=change(array)
+console.log(result)
 
-*/
+
