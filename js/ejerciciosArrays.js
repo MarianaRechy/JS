@@ -112,7 +112,7 @@ Ejercicio 3
 * -> ['Ana','Ivan','Oscar']
 *
 * => Se puede resolver con .forEach() o .filter()
-*/
+
 
 let array= ['jorge','ana','ivan','sergio','oscar']
 
@@ -133,3 +133,4 @@ let result=change(array)
 console.log(result)
 
 
+*/
