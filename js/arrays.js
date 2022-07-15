@@ -246,15 +246,20 @@ console.log(sumArray)
 // * -> 42
 
 
-let addAllPositives [ 1, -4, 12, 0, -3, 29, -150] 
+const addAllPositives [ 1, -4, 12, 0, -3, 29, -150] 
 
-const positiveNumbers.reduce = ((input)(cv) => {
-       if(input!-Number){
-        return input += cv 
+const sum=(arr) =>{
+  const positiveNumbers.reduce = ((input)(cv) => {
+       if(cv<0){
+       input += cv;
        }
+       return input;
+  },0)
+  return positiveNumbers;
 
-},"")
-
-let result= positiveNumbers(addAllPositives)
-console.log(result)
+  let result= (sum(addAllPositives))
+  console.log(result)
+}
 */
+
+
