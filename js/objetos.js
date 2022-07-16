@@ -179,4 +179,176 @@ for(propiedad in grades){
 
 console.log(result)
 console.log(aver.toFixed(2))
+
+//!Metodos de objetos
+
+//!Keys
+
+let Student = {
+  name: "Lisa",
+  age: 24,
+  marks: 78.9,
+};
+
+// get all keys of Student
+let std1 = Object.keys(Student);
+console.log(std1);
+
+// Output: [ 'name', 'age', 'marks' ]
+
+//!Create
+let Student = {
+  name: "Lisa",
+  age: 24,
+  marks: 78.9,
+  display() {
+    console.log("Name:", this.name);
+  }
+};
+
+// create object from Student prototype
+let std1 = Object.create(Student);
+
+std1.name = "Sheeran";
+std1.display();
+
+// Output: Name: Sheeran
+
+
+
+
+
+//!Assign
+// cloning objects o copy
+The assign() method takes in:
+
+target - The target object — what to apply the sources' properties to, which is returned after it is modified.
+sources - The source object(s) — objects containing the properties you want to apply.
+
+const obj = {
+  name: "Alan Turing",
+  age: 120,
+};
+
+let newObject = {};
+
+const copy = Object.assign(newObject, obj);
+// modifies the target object
+console.log(newObject);
+// returns the modified object
+console.log(copy);
+
+{ name: 'Alan Turing', age: 120 }
+{ name: 'Alan Turing', age: 120 }
+
+
+//!Entries
+//Devuelve un pequeño array de un array padre.
+const obj = { name: "Adam", age: 20, location: "Nepal" };
+console.log(Object.entries(obj)); // [ [ 'name', 'Adam' ], [ 'age', 20 ], [ 'location', 'Nepal' ] ]
+
+//!Seal
+//Nos permite editar pero no  borrar.
+
+//! value
+
+SE PUEDE CONVERTIR A ARRAY Y EPLICAR METODOS DE ARRAY
+
+
+const notas={
+    examen1: 10,
+    examen2: 7,
+    examen3: 6,
+}
+
+let arr= Object.values(notas) 
+console.log(arrNotas)
+
+//Suma de notas usando for
+
+let total=0
+for(let i=0; i<arr.length;i++){
+    total += arr[i]
+}
+console.log(total)
+
+//suma de notas con forEach
+
+arr.forEach((nota)=>{
+   total += nota;
+})
+
+console.log(total)
+
+//suma de las notas usando reduce
+
+arr.reduce((acc,notas)=>{
+    acc += notas
+    return acc
+},0)
+console.log(total)
+
+
+//! Freeze No deja sobreescribir
+Object.freeze(objTest)
+
+
+//! Object is, compara dos valores dentro de un objeto, recibe valor 1 y 2. Arroja verdadero o falso.
+ARROJA UN VALOR BOLEANO
+
+*/
+
+/**
+* Ejercicio 1.
+* Realizar una funcion que tome como parametro un objeto
+* y devuelva un array de arrays con la siguiente estructura
+* [ [key, value], [key, value] ]
+* makePairs( { a: 1, b: 2 } )
+* => [ ['a', 1], ['b', 2]]
+*
+
+
+function makePairs(){
+    const  valores = { 
+        a: 1, 
+        b: 2, 
+    };
+
+    console.log(valores);
+    console.log(Object.entries(valores));
+}
+
+
+* Se tiene que realizar 2 soluciones,
+* 1 con Object.entries() y
+*  Otra con .map()
+
+
+
+21:36
+/**
+* Dado un objeto de salarios
+* Crear una funcion que retorne una lista
+* con los salarios ordenados de menor a mayor
+* orderSalary( salarios)
+* -> [4000, 5000, 7000]
+hint -> Usar metodo de objetos y luego un metodo de array para ordenar
+
+
+const  orderSalary = {
+    1: 7000,
+    2: 5000,
+    3: 4000,
+}
+
+function list() {
+    console.log(orderSalary);
+
+    const arr = Object.values(orderSalary)
+    // [7000,5000,4000]
+    console.log(arr.sort());
+    // [4000,5000,7000]
+} 
+
+list();
 */
