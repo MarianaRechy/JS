@@ -6,7 +6,7 @@ Luego en otro console log, imprime todas las llaves dentro del objeto
 Luego en otra console log, imprime todas los valores dentro del objeto
 En otro console log imprime cuántos elementos tiene el objeto -> hint: utilizamos un contador
  
-*/
+
 
 const koder= {
     Curso: "Fullstack",
@@ -24,7 +24,7 @@ const koder= {
 
 console.log(`En este kodawars, contaremos con el equipo de Globalpet, entre los participantes se encuentra ${koder.Perfil.Nombre} desde ${koder.Perfil.Ciudad} Ella se encuentra concluyendo su curso de ${koder.Curso}`)
 
-
+*/
 
 /*
 
@@ -74,3 +74,97 @@ const changes= (input) =>{
 }
 
 */
+
+//! Tarea 15Jun
+/**
+* Dado un array de objetos koders
+* Imprimir en consola, todos los nombres de cada koder
+*
+* Ferdinand Bracho tiene 30 años y es de la generación 2 y su primer modulo es python
+* Jose Hernandez tiene 20 años y es de la generación0 20' y su primer modulo es nodeJs
+* ....
+*
+*/
+/**
+* Del mismo array de koders
+* Obtener la suma de todas las edades
+*
+*/
+
+let koders =[
+    {
+        nombre: "Elizabeth",
+        edad: "29",
+        generacion:"22",
+        modulo: "Maquetado",
+    },
+    {
+        nombre: "Karen",
+        edad: "35",
+        generacion:"23",
+        modulo: "fullStack",
+    },
+    {
+        nombre: "Fernando",
+        edad: "30",
+        generacion:"31",
+        modulo: "html",
+    },
+    {
+        nombre: "Elvys",
+        edad: "42",
+        generacion:"1",
+        modulo: "Phyton",
+    }
+];
+
+/*
+koders.map((a)=>{
+    console.log(`${a.nombre} tiene ${a.edad}, es de la generacion ${a.generacion} y su primer modulo es ${a.modulo}`)
+})
+
+*/
+
+let result= koders.map((a)=>{
+    let sum= a.edad.reduce((total,cv)=>{
+        total += cv
+        return sum;
+    })
+})
+
+console.log(result(koders));
+
+/**
+* Del objeto library (dado mas adelante)
+* 1. Obtener el numero de libros que se estan leyendo
+* 2. Obtener una lista de todos los autores
+* 3. Obtener una lista de todos los Libros
+*
+
+let library = [
+    {
+        author: 'Bill Gates',
+        title: 'The Road Ahead',
+        readingStatus: true
+    },
+    {
+        author: 'Steve Jobs',
+        title: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        author: 'Suzanne Collins',
+        title:  'Mockingjay: The Final Book of The Hunger Games',
+        readingStatus: false
+    }
+   ]
+
+
+koders.map((b)=>{
+    console.log(`${b.author}`)
+    console.log(`${b.title}`)
+})
+
+
+
+   */
