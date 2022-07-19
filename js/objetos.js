@@ -351,4 +351,57 @@ function list() {
 } 
 
 list();
+
+
+//!Metodos de objetos
+
+const koder={
+    fName : "Jose",
+    lName : "Perez",
+}
+
+fullName function(){
+    return this.fName
+}
+
+"hola.trim()
+
+//! Funciones constructuras de objetos
+
+function Mentor(nombre, apellido, edad){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+}
+
+const alfredo = new Mentor("Alfredo", "Pl",28)
+
+new palabra reservada
+
+//! Clases en js
+//Hereda propiedades y metodos de una clase a otra
+class Car {
+    constructor(color,modelo){
+    this.color=color;
+    this.modelo=modelo;
+    }
+}
+
+let coche1=new Car("rojo", "modelo1")
+
+console.log(coche1)
+
+constructor --> palabra reservada
+
 */
+
+
+
+
+
+
+
+
+
+
+

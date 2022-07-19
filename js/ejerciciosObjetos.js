@@ -94,45 +94,43 @@ const changes= (input) =>{
 let koders =[
     {
         nombre: "Elizabeth",
-        edad: "29",
+        edad: 29,
         generacion:"22",
         modulo: "Maquetado",
     },
     {
         nombre: "Karen",
-        edad: "35",
+        edad: 35,
         generacion:"23",
         modulo: "fullStack",
     },
     {
         nombre: "Fernando",
-        edad: "30",
+        edad: 30,
         generacion:"31",
         modulo: "html",
     },
     {
-        nombre: "Elvys",
-        edad: "42",
+        nombre: "Elvis",
+        edad: 42,
         generacion:"1",
         modulo: "Phyton",
     }
 ];
 
-/*
+
 koders.map((a)=>{
     console.log(`${a.nombre} tiene ${a.edad}, es de la generacion ${a.generacion} y su primer modulo es ${a.modulo}`)
+});
+
+
+let result = 0
+koders.forEach((b, index, numbers)=>{
+    result += b.edad;
+    return result;
 })
 
-*/
-
-let result= koders.map((a)=>{
-    let sum= a.edad.reduce((total,cv)=>{
-        total += cv
-        return sum;
-    })
-})
-
-console.log(result(koders));
+console.log(result);
 
 /**
 * Del objeto library (dado mas adelante)
@@ -168,3 +166,4 @@ koders.map((b)=>{
 
 
    */
+  
