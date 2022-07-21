@@ -1,7 +1,8 @@
 
 /*
 DOM Document Objet Model
-El texto lo transforma en un objeto
+El texto lo transforma en un objeto, representacion de documento HTML, interpretado por js crea un objeto. 
+Representa una interfaz.
 
 //! Seleccionar elementos
 
@@ -146,5 +147,51 @@ let koders =  [
        modulos: ['React'],
    }
 ]
+
+
+//! Otras propiedades de los elementos del DOM
+//? textContent
+//? innerText
+//? inner HTML
+
+let lista= document.querySelector(".lista")
+console.log(lista)
+
+let menuItems =["comidaChina", "Mexicana", "Venezonala"]
+
+menuItems.forEach((texto)=>{
+    lista.innerHTML += `<li class="items">${texto}</li>`
+})
+
+
+
+
+//! claslist
+let lista = document.querySelector("ul")
+// ? Agregamos una o mas clases (respetando las ya presentes)
+lista.classList.add("otra","otramas")
+
+// ? Nos ayuda a eliminar clases indicadas
+lista.classList.remove("otramas")
+
+//? Nos da un string con las clases
+console.log(lista.classList.value)
+
+//? Nos construye un iterable -> for of
+
+let iteClass = lista.classList.values()
+for(x of iteClas){
+    console.log(x)
+}
+//? length
+console.log(lista.classList.length)
+
+//? 
+
+NOTA FOR EACH LLEVA VARIABLE AFUERA PORQUE NO TIENE RETURN
+REDUCE LLEVA LA VARIABLE AL PRINCIPIO DE LA Function
+CADA TAG O TEXTO O COMENTARIO ES UN NODO
+SOLO SON ELEMENTOS LOS TAGS HTML
+LA DIFERECIA ESTA EN LA POSIBILIDAD DE SETEAR ATRIBUTOS-.
 
 */

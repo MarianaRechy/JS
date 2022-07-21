@@ -91,6 +91,7 @@ const changes= (input) =>{
 *
 */
 
+/*
 let koders =[
     {
         nombre: "Elizabeth",
@@ -131,7 +132,7 @@ koders.forEach((b, index, numbers)=>{
 })
 
 console.log(result);
-
+*/
 /**
 * Del objeto library (dado mas adelante)
 * 1. Obtener el numero de libros que se estan leyendo
