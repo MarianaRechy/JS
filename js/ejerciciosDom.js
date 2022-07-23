@@ -213,3 +213,5 @@ factor.innerHTML = ciclo
 // posting.firstChild.textContent="prueba"
 
 */
+
+
