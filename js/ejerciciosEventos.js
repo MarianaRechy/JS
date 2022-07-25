@@ -403,31 +403,83 @@ let users = [
 // * Escuchar algun evento en el input y llamar a la funcion de filtrado cuando se detone
 //* el evento en el boton "buscar" con el valor del mismo y hacerle console.log()
 
+const filterUSers = (str) => {
+  let strF = str.toLowerCase()
+  let usuariosFiltrados = users.filter((user)=> {
 
+      if(
+          user.name.toLocaleLowerCase().match(strF) ||
+          user.username.toLocaleLowerCase().match(strF) ||
+          user.email.toLocaleLowerCase().match(strF)
+          ) {
+          return user
+      }
 
-let event= document.querySelector(".input_text")
+  })
 
+  return usuariosFiltrados
+}
+  
+let infoUsers = document.querySelector(".input.text")
+let buscarUsuario= document.querySelector(".find_user")
 
-input_text.addEventListener((keydown, (function))=>{
-  const filterUSers = (str) => {
-    let strF = str.toLowerCase()
-    let usuariosFiltrados = users.filter((user)=> {
+buscarUsuario.addEventListener("click", ()=>{
+  let texto= infoUsers.value
+  let resultado=filterUSers(texto)
+  console.log(resultado)
+});
 
-        if(
-            user.name.toLocaleLowerCase().match(strF) ||
-            user.username.toLocaleLowerCase().match(strF) ||
-            user.email.toLocaleLowerCase().match(strF)
-            ) {
-            return user
-        }
+/*
+// ? Tomando elemento input
+let input = document.querySelector('.input_text')
 
-    })
+// ? Tomando elemento boton "buscar"
+let findButton = document.querySelector('.find_user')
 
-    return usuariosFiltrados
+// ? Agregando evento "click" al boton para ejecutar el filtrado cuando se detono el mismo
+findButton.addEventListener('click', () =>{
+
+    // ? Tomando el valor del input
+   strToFilter = input.value
+
+    // ? Ejecutando el filtrado
+   result = filterUSers(strToFilter)
+
+    Array.forEach
+
+    filter 
+    map 
+    forEach 
+
+    // ? Imprimiendo el resultado en consola 
+   console.log(result)
+})
+*/
+
+// pasos 3.1 Capturar mi user holder
+// por cada usuario renderizar una card
+
+const insertUsers = (arr) => {
+  
+  let list = document.querySelector("#list_users")
+
+  list.innerHTML = ""
+
+  arr.forEach((user) => {
+
+    list.innerHTML += `
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">${user.name}</p>
+          <small>${user.username}</small>
+        </a>
+      </div> 
+      `
+  });
 }
 
-})
-
-
-  
-
+let result= insertUsers(users)

@@ -60,4 +60,17 @@ https://getbootstrap.com/docs/5.2/components/card/#example
 
 https://getbootstrap.com/docs/5.2/components/card/#example
 
+
+
+//! Event propagation
+  // ! Bubbling
+  // ! Capturing
+
+//! Preventing the Default Action
+
+.addEventListener
+
+.removeEventListener( click, callback, true)
+
+
 */
