@@ -25,7 +25,7 @@ btn.addEventListener(click, (a) =>{
 
 });
 
-/*
+
 
 Ejercicio 2
 // !2 Manejo de envento en el input "inserte texto"
@@ -63,7 +63,7 @@ addCard.addEventListener (click, (a) =>{
 });
 
 
-*/
+
 //!TAREA 21-07
 
 
@@ -420,14 +420,17 @@ const filterUSers = (str) => {
   return usuariosFiltrados
 }
   
-let infoUsers = document.querySelector(".input.text")
+let infoUsers = document.querySelector(".input_text2")
 let buscarUsuario= document.querySelector(".find_user")
 
-buscarUsuario.addEventListener("click", ()=>{
+infoUsers.addEventListener("input", ()=>{
   let texto= infoUsers.value
   let resultado=filterUSers(texto)
-  console.log(resultado)
+  console.log(resultado, texto)
+  let result= insertUsers(resultado)
 });
+
+
 
 /*
 // ? Tomando elemento input
@@ -454,7 +457,7 @@ findButton.addEventListener('click', () =>{
     // ? Imprimiendo el resultado en consola 
    console.log(result)
 })
-*/
+
 
 // pasos 3.1 Capturar mi user holder
 // por cada usuario renderizar una card
@@ -469,7 +472,7 @@ const insertUsers = (arr) => {
 
     list.innerHTML += `
     <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">List group item heading</h5>
             <small>3 days ago</small>
@@ -482,4 +485,5 @@ const insertUsers = (arr) => {
   });
 }
 
-let result= insertUsers(users)
+*/
+
