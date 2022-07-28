@@ -134,5 +134,94 @@ xRe.SEND()
 const userToCreate = {
     firstname: "Mariana",
     lastname: "Rechy"
-}*/
+}
 
+console.log(userToCreate);
+
+
+
+// ! Crear un usario con AJAX 
+
+const createUser = (user) => {
+    const httRequest = new XMLHttpRequest()
+
+    httRequest.onload = (e) => {
+        console.log(e.target.responseText)
+    }
+
+    httRequest.open("POST",'https://kodemia-g20-default-rtdb.firebaseio.com/koders.json', false)
+
+    let userJson = JSON.stringify(user)
+
+    httRequest.send(userJson)
+}
+
+
+const userToCreate = {
+    firstName: "Mariana",
+    lastName: "Rechy"
+}
+
+createUser(userToCreate)
+console.log("aloooo")
+
+
+
+
+//! Practica de clase
+
+//En su propio BD 
+//Crear uns subdirectorio llamada "post" 
+//Y este crear al menos 10 post 
+//con la siguiente estructura -> titulo - Body - date
+
+
+const createPost = (post) => {
+    const httRequest = new XMLHttpRequest()
+
+    httRequest.onload = (e) => {
+        console.log(e.target.responseText)
+    }
+
+    httRequest.open("POST",'https://rechy-kodemia-default-rtdb.firebaseio.com/post.json', false)
+
+    let postJson = JSON.stringify(post)
+
+    httRequest.send(postJson)
+}
+
+
+const post = {
+    titulo: "New data",
+    body: "Soy un body",
+    date: " 07/27/2022"
+}
+
+
+createPost(post)
+
+
+
+//! Update Data -> PUT
+
+const updateData = (data) =>{
+    const httRequest = new XMLHttpRequest ()
+
+    httRequest.onload= (e)=>{
+        console.log(e.target.responseText)
+    }
+    httRequest.responseXML("PUT", "https://rechy-kodemia-default-rtdb.firebaseio.com/", false)
+
+    httRequest.send.apply(JSON.stringify(data))
+}
+
+const newData ={
+    firstName: "Ferdinand",
+    lastName: "Bracho"
+}
+
+updateData(newData)
+
+
+
+*/
