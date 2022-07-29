@@ -48,8 +48,8 @@ document.addEventListener(("DOMContentLoaded"),() => {
     insertPost(postToRender)
 });
 
-*/
 
+*/
 
 const getPosts = (url) => {
     let posts = [];
@@ -94,7 +94,9 @@ const printPosts = () =>{
                     <div class="card-body">
                         <h5 class="card-title">${posts[post].titulo}</h5>
                         <p class="card-text">${posts[post].body}</p>  
-                        <small>${posts[post].date}</small>                  
+                        <small>${posts[post].date}</small>
+                        <a class="btn btn-primary btn-sm" href="/detail.html?postId=${post}">DETALLES
+                        </a>               
                     </div>
                 </div>
             </div>
@@ -108,8 +110,8 @@ let card = document.querySelector(".card_post")
 card.innerHTML = printPosts()
 
 
-
-  /*
+/*
+  
   posts.forEach(({title, body, tags}) => {
     
     let tagHTML = tags.reduce((html, tag) =>{
