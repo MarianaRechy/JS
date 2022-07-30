@@ -1,4 +1,3 @@
-
 /*
 const getData = (url) => {
     const httpRequest = new XMLHttpRequest();
@@ -47,7 +46,6 @@ insertPost.innerHTML = template
 document.addEventListener(("DOMContentLoaded"),() => {
     insertPost(postToRender)
 });
-
 
 */
 

@@ -26,8 +26,21 @@ console.log(change)
 createPost(change)
 } )
 
+
 const createPost = (newData)=>{
-    const postRequest = new XMLHttpRequest(); 
+    fetch("https://rechy-kodemia-default-rtdb.firebaseio.com/post.json", {method: "POST",body: JSON.stringify(newData),headers: {"Content-type": "application/json; charset=UTF-8"}})
+.then((res)=>{
+        return res.json()
+})
+.then((res)=>{
+        console.log(res)
+        cleanForm()
+})
+.catch((error)=>{
+        
+})
+
+    /*const postRequest = new XMLHttpRequest(); 
     console.log("hola")
     postRequest.onload =(data)=>{
         if (
@@ -43,7 +56,11 @@ const createPost = (newData)=>{
     }
     postRequest.open("POST","https://rechy-kodemia-default-rtdb.firebaseio.com/post.json",false)
 
-    postRequest.send(JSON.stringify(newData))
+    postRequest.send(JSON.stringify(newData))*/
 }
 
-
+const cleanForm = () => {
+    inputTitlePost.value = '';
+    inputBodyPost.value = '';
+    inputDatePost.value = '';
+}
