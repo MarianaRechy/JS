@@ -132,13 +132,13 @@ koders.forEach((b, index, numbers)=>{
 })
 
 console.log(result);
-*/
-/**
-* Del objeto library (dado mas adelante)
+
+
+Review done 
+Del objeto library (dado mas adelante)
 * 1. Obtener el numero de libros que se estan leyendo
 * 2. Obtener una lista de todos los autores
 * 3. Obtener una lista de todos los Libros
-*
 
 let library = [
     {
@@ -158,13 +158,38 @@ let library = [
     }
    ]
 
-
-koders.map((b)=>{
-    console.log(`${b.author}`)
-    console.log(`${b.title}`)
+const numberBooks = ((arrayLibrary) =>{
+    let result = arrayLibrary.reduce (( counter, cv)=>{
+        if(cv.readingStatus === true){
+            counter ++;
+        }
+        return counter;                 
+    },0)
+    return result;
 })
 
+const resultNumberBooks= numberBooks (library);
+console.log (`El total de libros lídos es de ${resultNumberBooks}`);
+
+const authorBook = (( arrayLibrary) => {
+    let result = arrayLibrary.map ((cv) =>{
+        return cv.author
+    })
+    return result;
+})
+
+const authorList = authorBook (library);
+console.log ( `Esta es la lista de autores ${authorList}`)
 
 
-   */
-  
+const book = (( arrayLibrary) => {
+    let result = arrayLibrary.map ((cv) =>{
+        return cv.title
+    })
+    return result;
+})
+
+const titleList = book (library);
+console.log ( `Esta es la lista de libros ${titleList}`)
+
+*/
